@@ -81,6 +81,6 @@ public class SecurityConfig {
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", config);
-        return new org.springframework.web.filter.CorsFilter(source);
+        return new CorsFilter(source);
     }
 }
